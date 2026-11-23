@@ -1,0 +1,17 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: stellar-wim
+Source: local fork of Labwc 0.20.3
+
+Files: *
+Copyright: 2020-2025 The Labwc contributors
+           2026 The Stellar WiM contributors
+License: GPL-2
+ Stellar WiM is derived from Labwc and is distributed under the GNU General
+ Public License, version 2 only.
+ .
+ On Debian systems the full text of the GNU General Public License version 2
+ can be found in /usr/share/common-licenses/GPL-2.
+
+Files: packaging/*
+Copyright: 2026 The Stellar WiM contributors
+License: GPL-2

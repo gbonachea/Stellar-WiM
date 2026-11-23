@@ -1,0 +1,30 @@
+stellar-wim (0.8.0-1) unstable; urgency=medium
+
+  * Fade views out on minimize and when a tab is hidden; the scene node stays
+    enabled until the fade finishes.
+  * Tab groups accept 2..32 window ids over IPC, can extend existing groups,
+    have clickable bar segments and share one geometry across members.
+  * Add five tiling modes (master-stack, horizontal, vertical, grid, hybrid),
+    configurable master ratio/columns/min-max limits and per-window
+    stellarTilingMode rules.
+  * Add TILING SET and enrich TILING STATUS with mode/master_ratio/columns.
+    The minimal and enhanced profiles now also toggle visual effects.
+  * Strip every build-only subproject destination from Meson's install plan
+    at install time, instead of removing usr/lib in the Debian rules.
+  * Add the Stellar Configuration API: validated, atomic CONFIG GET/LIST/SET/
+    RESET/STATUS with live or deferred application and config events.
+  * Manage safe argument-free keybindings and validated window-rule properties
+    through CONFIG KEYBINDINGS and CONFIG RULES; arbitrary commands are rejected.
+  * Preserve CLI argument case so keys, theme names and rule identifiers are
+    not corrupted, while verb matching remains case-insensitive.
+
+ -- Stellar WiM Maintainers <stellar-wim@example.invalid>  Fri, 20 Nov 2026 00:00:00 +0000
+
+stellar-wim (0.7.0-1) unstable; urgency=medium
+
+  * Enable animations, drop shadows and opacity by default.
+  * Initial Stellar WiM source package (Fase 6).
+  * Ships the compositor, stellar-wimctl, session metadata, man pages and
+    example configuration under names that do not collide with Labwc.
+
+ -- Stellar WiM Maintainers <stellar-wim@example.invalid>  Fri, 20 Nov 2026 00:00:00 +0000

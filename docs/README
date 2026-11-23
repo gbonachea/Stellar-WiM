@@ -1,0 +1,11 @@
+Config layout for ~/.config/stellar-wim/
+- autostart
+- environment
+- menu.xml
+- rc.xml
+- shutdown
+- themerc-override
+- xinitrc
+
+See `man stellar-wim-config` and `man stellar-wim-theme` for further details.
+

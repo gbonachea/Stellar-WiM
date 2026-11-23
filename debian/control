@@ -1,0 +1,43 @@
+Source: stellar-wim
+Section: x11
+Priority: optional
+Maintainer: Stellar WiM Maintainers <stellar-wim@example.invalid>
+Build-Depends: debhelper-compat (= 13),
+               meson (>= 0.59),
+               pkg-config,
+               git,
+               ca-certificates,
+               gettext,
+               scdoc,
+               libwayland-dev (>= 1.22.90),
+               wayland-protocols (>= 1.39),
+               libxkbcommon-dev,
+               libxcb1-dev,
+               libxcb-ewmh-dev,
+               libxcb-icccm4-dev,
+               libdrm-dev,
+               libxml2-dev,
+               libglib2.0-dev,
+               libcairo2-dev,
+               libpango1.0-dev,
+               libinput-dev (>= 1.26),
+               libpixman-1-dev,
+               libpng-dev,
+               librsvg2-dev,
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+
+Package: stellar-wim
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: xdg-desktop-portal-wlr
+Description: lightweight Wayland compositor with tabs, tiling and effects
+ Stellar WiM is a fork of Labwc 0.20.3. It keeps Labwc's floating-first,
+ stacking behaviour and adds opt-in tab groups, five tiling modes, runtime
+ profiles, local IPC control and visual effects. Effects are on by default,
+ including fade-out on minimize and tab hide; tabs and tiling are off by
+ default and IPC can be disabled in rc.xml. The fork installs under its own
+ name so it can coexist with Labwc.
+ .
+ This package contains the stellar-wim compositor, the stellar-wimctl
+ control tool, session metadata and documentation.

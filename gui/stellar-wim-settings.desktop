@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Stellar WiM Settings
+GenericName=Window Manager Settings
+Comment=Configure Stellar WiM effects, decorations, keybindings and rules
+Exec=@CMAKE_INSTALL_FULL_LIBEXECDIR@/stellar-wim/stellar-wim-settings
+Icon=preferences-system-windows
+Terminal=false
+Categories=Settings;DesktopSettings;System;
+Keywords=stellar;wim;wayland;compositor;windows;
+StartupNotify=true

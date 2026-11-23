@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Stellar WiM symbolic icon, original artwork for this fork. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"
+     viewBox="0 0 256 256" fill="#ffffff">
+  <path d="M24 40h208a16 16 0 0 1 16 16v144a16 16 0 0 1-16 16H24a16 16 0 0 1-16-16V56a16 16 0 0 1 16-16zm8 48v112h192V88zm16-32a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm30 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/>
+  <path d="M128 96l14 34 35 3-27 23 8 35-30-19-30 19 8-35-27-23 35-3z"/>
+</svg>

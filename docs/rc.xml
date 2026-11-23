@@ -1,0 +1,65 @@
+<!--
+  This is a very simple config file with many options missing. For a complete
+  set of options with comments, see docs/rc.xml.all
+-->
+
+<labwc_config>
+
+  <!--
+    Stellar WiM extensions (defaults shown). Tabs and tiling are off;
+    animations, opacity and dropShadows are on. The minimal/enhanced profiles
+    switch tabs, tiling and effects together. Uncomment to change them.
+  <stellar-wim>
+    <ipc enabled="yes"/>
+    <profile>custom</profile>
+    <tabs enabled="no"/>
+    <tiling enabled="no">
+      <mode>master-stack</mode>
+      <master-ratio>0.60</master-ratio>
+      <columns>2</columns>
+      <min-width>0</min-width>
+      <min-height>0</min-height>
+      <max-width>0</max-width>
+      <max-height>0</max-height>
+    </tiling>
+    <effects animations="yes" opacity="yes" opacity-level="0.90"/>
+  </stellar-wim>
+  <windowRules>
+    <windowRule identifier="foot">
+      <stellarTilingMode>horizontal</stellarTilingMode>
+    </windowRule>
+  </windowRules>
+  -->
+
+  <theme>
+    <name>Clearlooks-3.4</name>
+    <cornerRadius>14</cornerRadius>
+    <font name="sans" size="10" />
+  </theme>
+
+  <keyboard>
+    <default />
+    <!-- Use a different terminal emulator -->
+    <keybind key="W-Return">
+      <action name="Execute" command="foot" />
+    </keybind>
+    <!--
+      Remove a previously defined keybind
+      A shorter alternative is <keybind key="W-F4" />
+    -->
+    <keybind key="W-F4">
+      <action name="None" />
+    </keybind>
+  </keyboard>
+
+  <mouse>
+    <default />
+    <!-- Show a custom menu on desktop right click -->
+    <context name="Root">
+      <mousebind button="Right" action="Press">
+        <action name="ShowMenu" menu="some-custom-menu" />
+      </mousebind>
+    </context>
+  </mouse>
+
+</labwc_config>

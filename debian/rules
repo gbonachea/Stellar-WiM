@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --buildsystem=meson
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		-Dtest=disabled \
+		-Dlabnag=disabled \
+		-Dman-pages=enabled \
+		-Dsystemd-session=auto \
+		-Ddefault_library=static
+
+# Subproject artifacts are stripped by build-aux/meson/strip-subproject-install.py
+# from Meson's own install plan; no distribution-owned files are shipped.

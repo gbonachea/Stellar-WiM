@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Stellar WiM
+Comment=A lightweight Wayland stacking compositor
+Exec=stellar-wim
+TryExec=stellar-wim
+Icon=stellar-wim
+Type=Application
+DesktopNames=stellar-wim;wlroots
